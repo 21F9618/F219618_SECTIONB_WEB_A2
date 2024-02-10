@@ -1,0 +1,257 @@
+.b{
+    background-color: rgb(212, 130, 71);
+    color: white;
+    display: flex;
+    margin-top: 0%;
+    vertical-align: middle;
+}
+.b2{
+
+    background-color: rgb(212, 130, 71);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.m{
+    display: flex;
+    text-align: right;
+    margin-left: 65%;
+    vertical-align: middle; 
+    margin-top: 18px;
+}
+.wrapper{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+}
+.c1red{
+    left: 7px;
+    height: 30px;
+    width: 30px;
+    background: rgb(165, 43, 43);
+}
+.c2orange{
+    left: 10px;
+    height: 23px;
+    width: 23px;
+    background: rgb(227, 167, 57);
+}
+
+.c3yellow{
+    left: 14px; 
+    height: 17px;
+    width: 17px;
+    background: rgb(220, 179, 75);
+}
+
+.c4blue{
+    left: 17px;
+    height: 12px;
+    width: 14px;
+    background: rgb(173, 173, 225);
+}
+.flame-wrapper{
+    position: relative;
+    display: flex;
+    margin-top: 47px;
+    animation: flicker 3ms ease-in-out infinite;
+}
+
+.all{
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 0% 50% 50%;
+    transform: rotate(-45deg);
+}
+@keyframes flicker{
+    20% {
+        transform: rotate(-2deg) scaleY(1.2);
+    }
+
+}
+
+.slider{
+    overflow: hidden;
+    height: 1%;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    animation: slide 3s infinite;
+    
+}
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: slide 3s infinite;
+
+}
+.slider figure img{
+    float: left;
+    width: 20%;
+
+
+}
+
+@keyframes slide {
+    0%{
+        left: 0%;
+    }
+    50%{
+        left: 0%;
+    }
+    75%{
+        left: -100%;
+    }
+    100%{
+        left: -100%;
+    }
+
+}
+
+.card{
+    display: flex;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    gap: 7%;
+}
+.img-container{
+    position: relative;
+
+}
+
+.card img{
+    width: 27%;
+    height: 30%;
+    border: 15px solid whitesmoke;
+    border-bottom: 50px solid whitesmoke;
+   
+}
+.card img:hover{
+    animation: circle 2s infinite;
+    
+}
+
+.pizza-specials{
+
+
+}
+@keyframes circle {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+.da img:hover{
+    animation: flip 2s infinite;
+}
+@keyframes flip {
+    100%{
+        transform: rotateX(160deg)
+    }
+    
+}
+.t{
+    color: black;
+    position: absolute;
+    top: 310px;
+    left: 40%;
+}
+.button{
+    background-color: rgb(65, 148, 65);
+    text-align: center;
+    color:white;
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+.button1{
+    background-color: rgb(65, 148, 65);
+    color:aliceblue;
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+
+}
+.button1:hover{
+    background-color: orange;
+    color:white;
+
+}
+.three-columns{
+    
+    
+}
+.tc:hover{
+    animation: popup 2s ease-in-out infinite;
+}
+@keyframes popup {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+
+    
+}
+.c{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(177, 177, 177);
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.5);
+    padding-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: left;
+
+}
+
+
+.center {
+    margin: 0 auto; /*this is for ensureing that everything is in the center of the page*/
+    text-align: center; 
+  }
+body { /*this is for the text align throughout the body of the website*/
+  text-align: center;
+}
+#orderForm {
+  margin: 0 auto;
+  text-align: left;
+  width: 40%;
+}
+.form-group {
+  margin-bottom: 10px;
+  display: flex; /*added this to ensure the alighnment of the things placed in this group relative to each other in a row*/
+  justify-content: space-between;
+}
+.input-group {
+  flex-basis: 48%; /*for controllying the size of the input wali chez for each of them*/
+}
+
+label, input {
+  display: block; /*making the labels and input boxes stack on top of each other*/
+  width: 100%;/*sets the size of the label and input to 100 of the container */
+  box-sizing: border-box; 
+}
+
